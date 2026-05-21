@@ -1,1 +1,1 @@
-# hangman.py
+#python
