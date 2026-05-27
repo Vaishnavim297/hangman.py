@@ -1,0 +1,12 @@
+# Deep Learning Foundations Documentation
+
+## 1. Core Architectures
+* **ANN (Artificial Neural Network):** Fully connected layers of neurons. Best for structured/tabular data. It struggles with high-dimensional data like images because flattening pixels destroys spatial orientation and creates too many parameters.
+* **CNN (Convolutional Neural Network):** Built specifically for grid-like data like images. Uses parameter sharing and local connectivity via filters to scan images and preserve structural relationships.
+* **RNN (Recurrent Neural Network):** Designed for sequential data (text, time-series). It utilizes recurrent loops to maintain a "hidden state" memory of past inputs.
+
+## 2. Detailed CNN Architecture & Working
+* **Convolutional Layer:** Applies sliding filters (kernels) across input matrix pixels to calculate dot products, generating Feature Maps that capture edges, shapes, and textures.
+* **Activation (ReLU):** Applied element-wise ($f(x) = \max(0, x)$) to introduce non-linearity so the network can learn complex, non-linear relationships.
+* **Pooling Layer (Max Pooling):** Reduces spatial size (width/height) of feature maps by selecting the maximum value in a window grid. This keeps the most important structural data while cutting down computational load.
+* **Flattening & Dense Layers:** Flattens 2D feature maps into a 1D vector and routes them through a fully connected layer to output class probabilities using Softmax.
